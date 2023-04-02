@@ -5,16 +5,16 @@ This notebook demonstrates the implementation of Gradient Boosting as an ensembl
 # Data Preparation
 The first step in building the model is to split the data into training and testing sets using the train_test_split() function. The training set will be used to train the model, while the testing set will be used to evaluate its performance.
 
-Since the data is imbalanced, with more samples in one class than the other, we used the oversampling technique. We resampled the training data using the OverSampler() method.
+Since the data is imbalanced, with more samples in one class than the other, I used the oversampling technique. I resampled the training data using the OverSampler() method.
 
 
 # Model Building
-To build the model, we used the GradientBoostingClassifier() class from the sklearn.ensemble module. We trained the model using the oversampled training data.
+To build the model, I used the GradientBoostingClassifier() class from the sklearn.ensemble module. I trained the model using the oversampled training data.
 
-Next, we performed cross-validation with the classifier, using the oversampled training data to tune hyperparameters and get the best performing model using GridSearchCV().
+Next, I performed cross-validation with the classifier, using the oversampled training data to tune hyperparameters and get the best performing model using GridSearchCV().
 
 
 # Model Evaluation
-I evaluated the performance of the model using a classification report, which provided precision, recall, F1-score, and support for each class. We also created an interactive dashboard that shows how the company's profit and losses change in relation to the model's probability threshold.
+I evaluated the performance of the model using a classification report, which provided precision, recall, F1-score, and support for each class. I also created an interactive dashboard that shows how the company's profit and losses change in relation to the model's probability threshold.
 
-i created a function called make_cnf_matrix that calculated and printed profit/losses and displayed a confusion matrix. We also created a FloatSlider thresh_widget that ranges from 0 to 1. Finally, we combined the function and slider in the interact function.
+I created a function called make_cnf_matrix that calculated and printed profit/losses and displayed a confusion matrix. I also created a FloatSlider thresh_widget that ranges from 0 to 1. Finally, I combined the function and slider in the interact function.
