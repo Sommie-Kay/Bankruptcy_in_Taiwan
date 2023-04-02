@@ -1,6 +1,6 @@
 # Predicting Bankruptcy in Taiwan
 
-This repository contains code for a machine learning project that predicts bankruptcy in Taiwan using the Decision Tree model. The dataset used is highly imbalanced, with a majority of non-bankrupt companies and a minority of bankrupt companies. To deal with this, the data was oversampled using the SMOTE technique and ensemble models such as Gradient Boosting Trees and Random Forest modeling were used.The project also includes an interactive dashboard that shows how company profit and losses change in relationship to the model's probability threshold.
+This repository contains code for a machine learning project that predicts bankruptcy in Taiwan using the Decision Tree model. The dataset used is highly imbalanced, with a majority of non-bankrupt companies and a minority of bankrupt companies. To deal with this, the data was Resampled and ensemble models such as Gradient Boosting Trees and Random Forest modeling were used.The project also includes an interactive dashboard that shows how company profit and losses change in relationship to the model's probability threshold.
 
 
 # Dataset
